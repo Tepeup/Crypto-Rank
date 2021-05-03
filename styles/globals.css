@@ -1,16 +1,209 @@
 html,
 body {
+  background-color: #121212;
+  color:white;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@media screen and (min-width: 1025px){
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5E5E5E; 
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-track {
+   background-color: #1E1E1E;
+  }
 }
 
+main{
+  width:100vw;
+  max-width: 500px;
+  height:auto;
+  background-color: #1E1E1E;
+}
+
+h1{
+  text-align: center;
+  margin: 0 0 0.5em 0
+}
 * {
   box-sizing: border-box;
 }
+.ranking-container{
+  padding:1em;
+  min-height: 50vh;
+}
+
+p{
+  margin:0;
+}
+
+img{
+  margin-right: 1em;
+}
+
+a:hover{
+  color:#BB86FC
+}
+a{
+  color:#03DAC6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  button{
+    border: none;
+    cursor: pointer;
+    color:white;
+    background-color:inherit;
+  
+  }
+  .button-container{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .donate-container {
+    margin-top: 1em;
+  
+    color: gray;
+    font-size: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .submit-button{
+    background-color: #03DAC6;
+    color:black;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    width:150px;
+    font-weight: bold;
+    height: 30px;
+  }
+  .red{
+    background-color: #CF6679;
+  }
+ 
+  .add-more{
+    display:grid;
+   
+  }
+  .list-buttons{
+    display: flex;
+    align-content: center;
+  }
+
+  .list-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    margin-bottom: .5em;
+    background-color: #2D2D2D;
+    color:white;
+    cursor:grab;
+    height:40px
+  }
+  .list-item:hover{
+    background-color: #BB86FC;
+    color:black
+  }
+  .list-item:hover *{
+   
+    color:black
+  }
+
+  .drag-button{
+    margin: 0 .5em;
+    color:#5E5E5E;
+  }
+  .sortable-ghost{
+    background-color: #BB86FC;
+  }
+
+  .coin-info{
+    display: inline-flex;
+    overflow-y: hidden;
+  }
+  .coin-name{
+    display: flex;
+  }
+  .coin-search-list:hover{
+  cursor: pointer;
+  background-color: #BB86FC;
+  color:black;
+  }
+  .coin-search-list:hover *{
+   
+    color:black
+  }
+  .coin-search-list {
+    height:40px;
+    background-color: #2D2D2D;
+    padding: 0.5em 1em;
+    display:flex;
+    justify-content: space-between;
+  }
+  .coin-rank{
+    margin-right: 1em;
+    
+    width:20px;
+  }
+  .coin-symbol{
+    color:gray;
+    margin-left: .5em;
+  }
+  .search-bar{
+    position: relative;
+  }
+  .search-icon{
+    position:absolute;
+    left:12px;
+    top:10px
+  }
+  .search-results {
+    max-height: 220px;
+    overflow-y: scroll;
+    margin-bottom: 1em;
+
+  }
+  input{
+    background-color: #2D2D2D;
+    color:white;
+    border: none;
+    width:100%;
+    max-width: 500px;
+    padding:.5em;
+    height:40px;
+    text-align: center;
+  }
+  .error-message{
+    font-size: 12px;
+    justify-self: center;
+    color: white;
+    margin-top: 0.25em;
+  }
+  .added {
+    background-color: #03DAC6;
+    color:black
+  }
+  .added *{color: black;}
+
+  .thank-you-message{
+    width:100%;
+    text-align: center;
+    margin:60px 0;
+  }
+
+  .add-button{
+    font-weight: bold;
+  }
+ 
