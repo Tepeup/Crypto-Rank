@@ -20,7 +20,7 @@ export default function RankingList() {
     if (keyword === "") {
       setSearch(" ");
     } else {
-      setSearch(keyword);
+      setSearch(keyword.toLowerCase());
     }
   };
 
