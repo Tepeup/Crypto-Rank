@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title> Create Next App </title>{" "}
+        <title> Global Top Ten Crypto </title>{" "}
         <meta
-          name="ranking of the most popular cryptocurrenices"
+          name="description"
           content="Most Popular Cryptocurrencies"
         />
         <link rel="icon" href="/favicon.ico" />
