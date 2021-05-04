@@ -49,7 +49,7 @@ export default function GlobalRankings() {
               <img src={item.image} width="20" height="20" />
               <p className="coin-name">
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1)}{" "}
-                <span className="coin-symbol">{item.symbol}</span>
+                <span className="coin-symbol">{item.symbol.toUpperCase()}</span>
               </p>
             </span>
           </span>
