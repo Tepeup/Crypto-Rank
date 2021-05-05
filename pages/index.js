@@ -23,7 +23,7 @@ export default function Home() {
           name="twitter:image"
           content="https://crypto-rank.vercel.app/preview.png"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/bitcoin.ico" />
       </Head>
       <main>
         <RankingList />
