@@ -40,7 +40,9 @@ export default function GlobalRankings() {
     <div className="ranking-container">
       <h1>Global Top Ten Cryptocurrencies</h1>
       <div className="button-container">
-        <Link href="/">(Vote Here)</Link>
+        <Link href="/">
+          <button className="submit-button">VOTE HERE</button>
+        </Link>
       </div>
       {globalRanking.map((item, index) => (
         <Link

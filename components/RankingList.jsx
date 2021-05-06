@@ -121,7 +121,9 @@ export default function RankingList() {
     <div className="ranking-container">
       <h1>My Top Ten Cryptocurrencies</h1>
       <div className="button-container">
-        <Link href="/global">(See Global Top Ten)</Link>
+        <Link href="/global">
+          <button className="submit-button">VIEW GLOBAL TOP TEN</button>
+        </Link>
       </div>
 
       {submitCheck ? (
