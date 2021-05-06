@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import firebase, { firestore } from "../firebase/firebase.utils";
 import Link from "next/link";
+import ForwardIcon from "@material-ui/icons/Forward";
 
 export default function GlobalRankings() {
   const [globalRanking, setGlobalRanking] = useState([]);
@@ -42,18 +43,28 @@ export default function GlobalRankings() {
         <Link href="/">(Vote Here)</Link>
       </div>
       {globalRanking.map((item, index) => (
-        <div className="list-item" key={item.name}>
-          <span className="coin-info">
-            <p className="coin-rank">{index + 1}</p>
+        <Link
+          href={`https://www.coingecko.com/en/coins/${item.name}/`}
+          key={item.name}
+        >
+          <div className="list-item global">
             <span className="coin-info">
-              <img src={item.image} width="20" height="20" />
-              <p className="coin-name">
-                {item.name.charAt(0).toUpperCase() + item.name.slice(1)}{" "}
-                <span className="coin-symbol">{item.symbol.toUpperCase()}</span>
-              </p>
+              <p className="coin-rank">{index + 1}</p>
+              <span className="coin-info">
+                <img src={item.image} width="20" height="20" />
+                <p className="coin-name">
+                  {item.name.charAt(0).toUpperCase() + item.name.slice(1)}{" "}
+                  <span className="coin-symbol">
+                    {item.symbol.toUpperCase()}
+                  </span>
+                </p>
+              </span>
             </span>
-          </span>
-        </div>
+            <span className="list-buttons">
+              <ForwardIcon className="drag-button" title="drag" />
+            </span>
+          </div>
+        </Link>
       ))}
       {/* <div className="donate-container">
         Donate BTC: 3Ebeo3vyRZXkqjswn1rsFuVtnLzmYU75BQ

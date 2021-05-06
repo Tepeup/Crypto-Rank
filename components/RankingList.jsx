@@ -12,7 +12,20 @@ export default function RankingList() {
 
   //Hooks
   const [search, setSearch] = useState(null);
-  const [myTopTen, setTopTen] = useState([]);
+  const [myTopTen, setTopTen] = useState([
+    {
+      id: "btc",
+      name: "bitcoin",
+      image:
+        "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    },
+    {
+      id: "eth",
+      name: "ethereum",
+      image:
+        "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
+    },
+  ]);
   const [submitCheck, setSubmitCheck] = useState(false);
 
   const searchCrypto = (event) => {

@@ -36,7 +36,7 @@ h1{
   box-sizing: border-box;
 }
 .ranking-container{
-  padding:1em;
+  padding:2em 1em;
   min-height: 50vh;
 }
 
@@ -65,8 +65,7 @@ a{
   
   }
   .button-container{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin:2em 0em;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -112,6 +111,11 @@ a{
     cursor:grab;
     height:40px
   }
+
+  .global{
+    cursor: pointer !important; 
+  }
+
   .list-item:hover{
     background-color: #BB86FC;
     color:black
@@ -152,6 +156,7 @@ a{
     display:flex;
     justify-content: space-between;
   }
+
   .coin-rank{
     margin-right: 1em;
     
