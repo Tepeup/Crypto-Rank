@@ -55,9 +55,9 @@ export default function GlobalRankings() {
           </span>
         </div>
       ))}
-      <div className="donate-container">
+      {/* <div className="donate-container">
         Donate BTC: 3Ebeo3vyRZXkqjswn1rsFuVtnLzmYU75BQ
-      </div>
+      </div> */}
     </div>
   );
 }
