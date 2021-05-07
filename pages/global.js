@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title> Global Top Ten Crypto </title>{" "}
+        <title>Global Crypto Rankings</title>{" "}
         <meta name="description" content="Most Popular Cryptocurrencies" />
         <meta
           name="viewport"

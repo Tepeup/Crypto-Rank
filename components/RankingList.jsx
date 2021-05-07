@@ -28,6 +28,12 @@ export default function RankingList() {
       image:
         "https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880",
     },
+    {
+      id: "bnb",
+      name: "binancecoin",
+      image:
+        "https://assets.coingecko.com/coins/images/825/large/binance-coin-logo.png?1547034615",
+    },
   ]);
   const [submitCheck, setSubmitCheck] = useState(false);
 
