@@ -5,6 +5,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import DragIndicatorIcon from "@material-ui/icons/DragIndicator";
 import Link from "next/link";
 import firebase, { firestore } from "../firebase/firebase.utils";
+import CustomButton from "../components/CustomButton";
+import CustomLink from "../components/CustomLink";
 
 export default function RankingList() {
   //JSON of all the supported currencies
@@ -77,28 +79,6 @@ export default function RankingList() {
       points: convertRankToPoints(index),
       image: data.image,
     }));
-    // let map = new Map();
-    // map.set(1, "num1");
-    // console.log(map);
-
-    // const rankings = topTenCopy.map((data, index) => {
-    //   let map = new Map();
-    //   let doc = map.set(data.name, convertRankToPoints(index));
-    //   const obj = Object.fromEntries(doc);
-    //   return obj;
-    // });
-
-    // const keys = topTenCopy.map((data) => {
-    //   return data.id;
-    // });
-    // const values = topTenCopy.map((data, index) => {
-    //   return convertRankToPoints(index);
-    // });
-
-    // var result = {};
-    // keys.forEach((key, i) => (result[key] = values[i]));
-    // console.log(result);
-    // console.log(keys, values);
 
     await firestore
       .collection("rankings")
@@ -121,13 +101,11 @@ export default function RankingList() {
     <div className="ranking-container">
       <h1>My Top Ten Cryptocurrencies</h1>
       <div className="button-container">
-        <Link href="/global">
-          <button className="submit-button">VIEW GLOBAL TOP TEN</button>
-        </Link>
+        <CustomLink type="enabled" text="VIEW GLOBAL TOP TEN" link="global" />
       </div>
 
       {submitCheck ? (
-        <div className="thank-you-message">Thank you for Voting!</div>
+        <div className="thank-you-message">VOTE SUBMITTED!</div>
       ) : (
         <div>
           {" "}
@@ -168,12 +146,10 @@ export default function RankingList() {
           <div className="button-container">
             {myTopTen.length > 0 ? (
               myTopTen.length > 4 ? (
-                <button className="submit-button" onClick={submitData}>
-                  SUBMIT
-                </button>
+                <CustomButton type="enabled" text="SUBMIT" click={submitData} />
               ) : (
                 <div className="add-more">
-                  <button className="submit-button red">SUBMIT</button>
+                  <CustomButton type="disabled" text="SUBMIT" />
                   <span className="error-message">
                     (minimum of five to submit)
                   </span>
