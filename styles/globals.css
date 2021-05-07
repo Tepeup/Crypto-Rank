@@ -71,7 +71,9 @@ a{
     cursor: pointer;
     color:white;
     background-color:inherit;
-  
+  }
+  button:hover{
+    opacity: 0.8;
   }
   .button-container{
     margin:2em 0em;
@@ -88,15 +90,7 @@ a{
     display: flex;
     justify-content: center;
   }
-  .submit-button{
-    background-color: #03DAC6;
-    color:black;
-    padding: 0.5em;
-    border-radius: 0.25em;
-    width:200px;
-    font-weight: bold;
-    height: 30px;
-  }
+
   .enabled{
     background-color: #03DAC6;
     color:black;
@@ -220,6 +214,8 @@ a{
     margin-bottom: 1em;
 
   }
+
+  
   input{
     background-color: #2D2D2D;
     color:white;

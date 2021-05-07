@@ -7,6 +7,7 @@ import Link from "next/link";
 import firebase, { firestore } from "../firebase/firebase.utils";
 import CustomButton from "../components/CustomButton";
 import CustomLink from "../components/CustomLink";
+import CloseIcon from "@material-ui/icons/Close";
 
 export default function RankingList() {
   //JSON of all the supported currencies
@@ -137,7 +138,7 @@ export default function RankingList() {
                     title="remove"
                     className="remove-button"
                   >
-                    &#10006;
+                    <CloseIcon />
                   </button>
                 </span>
               </div>
