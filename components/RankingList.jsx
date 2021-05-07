@@ -175,7 +175,10 @@ export default function RankingList() {
           <br></br>
           <div className="search-results">
             {listofCurrencies
-              .filter((data) => data.id.includes(search))
+              .filter(
+                (data) =>
+                  data.id.includes(search) || data.symbol.includes(search)
+              )
               .map((data, index) => {
                 return (
                   <div
