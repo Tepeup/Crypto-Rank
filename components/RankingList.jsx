@@ -90,7 +90,7 @@ export default function RankingList() {
     await firestore
       .collection("rankings")
       .doc()
-      .set({ rankings })
+      .set({ rankings, timestamp: Date() })
       .catch((error) => {
         alert(`Error`, error);
       });
