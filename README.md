@@ -4,4 +4,4 @@ Search for your favorite cryptos, drag and drop the reorganize your list, with m
 
 See current vote leaders under "View Global Top Ten", click on them for more information about the currency on coingeckos website.
 
-Use coingecko API 
+Uses coingecko API, react frontend, NextJS framework, Firebase backend
