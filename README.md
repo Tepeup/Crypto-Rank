@@ -1,4 +1,4 @@
-## Cryptocurrency Ranking
+# Cryptocurrency Ranking
 
 Full stack Application for ranking your favorite cryptocurrencies and submitting your rankings as a vote for the global rankings list which uses the Borda Count method top establish the top ten.
 
